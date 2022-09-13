@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+
+  <script>
+    const toggleRadioButton = (event) => {
+      event.currentTarget.classList.toggle('bg-slate-900/10');
+      event.currentTarget.classList.toggle('bg-indigo-600');
+      event.currentTarget.children[0].classList.toggle('translate-x-4');
+    }
+  </script>
+</head>
+
+<body class="bg-blue-50 flex items-center content-between flex-col py-4 space-y-4">
+
+  <!-- Search menu -->
+  <div class="relative p-4">
+    <div class="absolute left-11 top-8 bottom-0 right-0 bg-slate-900/[0.03]"></div>
+    <div
+      class="pointer-events-auto relative z-10 w-[24.125rem] rounded-lg bg-white text-[0.8125rem] leading-5 text-slate-700 shadow-xl shadow-black/5 ring-1 ring-slate-700/10">
+      <div>
+        <div class="flex items-center py-2.5 px-3.5 text-slate-400">
+          <svg class="mr-2 h-5 w-5 stroke-slate-500" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          Search projects...
+        </div>
+        <div class="border-t border-slate-400/20 py-3 px-3.5">
+          <div class="mb-1.5 text-[0.6875rem] font-semibold text-slate-500">
+            Recent searches
+          </div>
+          <div class="flex items-center rounded-md p-1.5">
+            <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+            </svg>
+            Tailwind Labs / Website Redesign
+          </div>
+          <div class="flex items-center rounded-md p-1.5">
+            <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+            </svg>Laravel LLC / Conference Branding
+          </div>
+        </div>
+        <div class="border-t border-slate-400/20 py-3 px-3.5">
+          <div class="flex items-center rounded-md p-1.5 bg-indigo-600 text-white"><svg
+              class="mr-2.5 h-5 w-5 flex-none stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>Add new file...</div>
+          <div class="flex items-center rounded-md p-1.5"><svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+              fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+            </svg>Add new folder...</div>
+          <div class="flex items-center rounded-md p-1.5"><svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+              fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+            </svg>Add hashtag...</div>
+          <div class="flex items-center rounded-md p-1.5"><svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+              fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+              </path>
+            </svg>Add label...</div>
+        </div>
+      </div>
+    </div>
+    <div class="z-0">
+      <div
+        class="absolute -right-[95%] left-0 top-8 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+      </div>
+      <div
+        class="absolute right-0 -top-2 -bottom-16 w-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+      </div>
+      <div class="absolute -right-2/3 top-px -mb-px flex h-8 items-end overflow-hidden">
+        <div class="flex -mb-px h-[2px] w-80 -scale-x-100">
+          <div
+            class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+          </div>
+          <div
+            class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toggle button -->
+  <div class="bg-white p-8 rounded-md shadow-md space-y-4">
+    <div
+      class="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out focus:ring-4 bg-slate-900/10 ring-slate-900/5"
+      onclick="toggleRadioButton(event)">
+      <div class="h-4 w-4 rounded-full bg-white shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out">
+      </div>
+    </div>
+    <div
+      class="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out active:ring-2 bg-indigo-600 ring-black/20"
+      onclick="toggleRadioButton(event)">
+      <div
+        class="h-4 w-4 rounded-full bg-white shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out translate-x-4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/img/deepmind.jpg"
+          alt="Man looking at item at a store">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers
+          for your new business</a>
+        <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas
+          you can use to find your first customers.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white overflow-hidden rounded-xl shadow-md max-w-md md:max-w-2xl md:flex">
+    <img src="img/deepmind.jpg" alt="deepmind" class="h-48 w-full md:w-48 md:h-full object-cover">
+    <div class="p-4 space-y-2">
+      <p class="text-indigo-600 font-semibold">Company retreats</p>
+      <p class="text-slate-800 text-xl font-semibold">Incredible accomodation for your team</p>
+      <p class="text-slate-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sapiente expedita possimus
+        vero necessitatibus dolor magni animi natus sunt adipisci corrupti id maiores pariatur similique illo, sint
+        dolores dolorum! At.</p>
+    </div>
+  </div>
+
+
+  <!-- before after -->
+  <div class="p-8 bg-white rounded-lg shadow-md space-y-4 z-0 max-w-lg">
+    <div class="space-y-4">
+      <p class="text-slate-500 font-medium">What's the difference between a jew and a pizza?</p>
+      <blockquote class="text-slate-700 font-bold text-3xl text-center">
+        The pizza doesn't
+        <span class="relative inline-block">
+          <span
+            class="before:bg-pink-500 before:-inset-1 before:-skew-y-3 before:absolute before:z-[-1] text-white">scream</span>
+        </span>
+        when you put it in the oven.
+      </blockquote>
+      <div class="text-right">
+        <span class="relative">
+          <span
+            class="text-slate-400 font-medium before:absolute before:bg-[url('img/underline.svg')] before:bg-[length:100%_100%] before:-inset-x-2 before:top-full before:-bottom-2">
+            Kanishk Dadhicha
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <!-- <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+      When you look
+      <span class="before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+        <span class="relative text-white">annoyed</span>
+      </span>
+      all the time, people think that you're busy.
+    </blockquote> -->
+  </div>
+
+
+  <!-- group-{modifier} -->
+  <a href="#"
+    class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+    <div class="flex items-center space-x-3 text-white">
+
+      <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-sky-700" fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M11 19H6.931A1.922 1.922 0 015 17.087V8h12.069C18.135 8 19 8.857 19 9.913V11"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M14 7.64L13.042 6c-.36-.616-1.053-1-1.806-1H7.057C5.921 5 5 5.86 5 6.92V11M17 15v4M19 17h-4"></path>
+      </svg>
+
+      <h3 class="text-slate-900 text-sm font-semibold group-hover:text-white">New project</h3>
+    </div>
+    <p class="text-slate-500 text-sm group-hover:text-white">Create a new project from a variety of starting templates.
+    </p>
+  </a>
+
+  <!-- disabled invalid focus:invalid before after-->
+  <div class="p-8 bg-white rounded-lg shadow-md">
+    <form action="" class="space-y-2">
+      <div>
+        <label for="username" class="block font-medium text-slate-700">Username</label>
+        <input type="text" name="username" id="username"
+          class="border rounded-md p-2 w-96 focus:border-slate-400 focus:outline-none disabled:text-slate-500" disabled
+          value="tbone">
+      </div>
+      <div>
+        <label for="email"
+          class="block font-medium text-slate-700 after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
+        <input type="email" name="email" id="email"
+          class="border rounded-md p-2 w-96 focus:border-transparent focus:ring focus:ring-blue-300 focus:outline-none invalid:border-pink-500 invalid:text-pink-500 focus:invalid:ring-pink-300"
+          value="george@krugerindustrial.">
+      </div>
+      <div>
+        <label for="password" class="block font-medium text-slate-700">Password</label>
+        <input type="password" name="password" id="password"
+          class="border rounded-md p-2 w-96 focus:border-transparent focus:ring focus:ring-blue-300 focus:outline-none"
+          value="1234">
+      </div>
+    </form>
+  </div>
+
+
+  <!-- first last -->
+  <div class="p-8 bg-white rounded-lg shadow-md">
+    <ul class="divide-y">
+      <li class="flex space-x-4 py-4 first:pt-0 last:pb-0 hover:bg-slate-50">
+        <img src="img/kristen-ramos.avif" alt="kristen-ramos" class="h-12 rounded-full">
+        <div>
+          <p class="text-lg font-semibold">Kristen Ramos</p>
+          <p class="text-slate-500 font-medium">kristen.ramos@example.com</p>
+        </div>
+      </li>
+      <li class="flex space-x-4 py-4 first:pt-0 last:pb-0 hover:bg-slate-50">
+        <img src="img/floyd-miles.avif" alt="floyd-miles" class="h-12 rounded-full">
+        <div>
+          <p class="text-lg font-semibold">Floyd Miles</p>
+          <p class="text-slate-500 font-medium">floyd.miles@example.com</p>
+        </div>
+      </li>
+      <li class="flex space-x-4 py-4 first:pt-0 last:pb-0 hover:bg-slate-50">
+        <img src="img/courtney-henry.avif" alt="courtney-henry" class="h-12 rounded-full">
+        <div>
+          <p class="text-lg font-semibold">Courtney Henry</p>
+          <p class="text-slate-500 font-medium">courtney.henry@example.com</p>
+        </div>
+      </li>
+      <li class="flex space-x-4 py-4 first:pt-0 last:pb-0 hover:bg-slate-50">
+        <img src="img/ted-fox.avif" alt="ted-fox" class="h-12 rounded-full">
+        <div>
+          <p class="text-lg font-semibold">Ted Fox</p>
+          <p class="text-slate-500 font-medium">ted.fox@example.com</p>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- hover active focus -->
+  <div class="p-8 bg-white rounded-lg shadow-md">
+    <button class="rounded-full px-4 py-2 font-semibold bg-purple-600 text-white transition-all
+    hover:bg-purple-800 hover:-translate-y-1
+    active:bg-purple-700 active:animate-none
+    focus:ring focus:ring-purple-200 focus:animate-btn">Save Changes</button>
+  </div>
+
+  <!-- ChitChat popup dialogue -->
+  <div class="bg-white p-6 rounded-xl shadow-md max-w-md text-center space-y-4 sm:flex sm:items-center sm:space-x-8">
+    <div class="shrink-0">
+      <img class="h-12 w-12 m-auto" src="img/ChitChat.svg" alt="ChitChat Logo">
+    </div>
+    <div class="space-y-4 sm:text-left">
+      <div>
+        <h2 class="text-2xl font-medium">ChitChat</h2>
+        <p class="text-slate-500">You have a new message! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laborum quasi minus animi a soluta obcaecati adipisci ratione totam alias, veniam possimus corrupti eum!
+          Labore asperiores similique nostrum iure ipsam nam!</p>
+      </div>
+      <button
+        class="rounded-md shadow-md border-2 border-transparent border-b-purple-700 bg-white text-slate-600 font-semibold px-4 py-2 hover:bg-purple-700 hover:text-white hover:border-transparent focus:ring-4 focus:ring-purple-300 transition-all">
+        Got it👍
+      </button>
+    </div>
+  </div>
+
+
+  <!-- Erin Lindford -->
+  <div class="bg-white p-8 rounded-xl shadow-md text-center space-y-2 sm:flex">
+    <img src="img/erin-lindford.jpg" alt="erin-lindford" class="w-28 rounded-full m-auto">
+    <div class="space-y-2 sm:text-left sm:ml-4">
+      <div>
+        <p class="font-semibold text-2xl">Erin Lindford</p>
+        <p class="text-slate-500 font-semibold text-lg">Product Engineer</p>
+      </div>
+      <button
+        class="border border-purple-200 rounded-full px-4 py-1 font-semibold text-purple-700 hover:bg-purple-700 hover:text-white hover:border-transparent transition-colors focus:ring ring-purple-200">Message</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
